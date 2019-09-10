@@ -214,7 +214,7 @@ erlang_generate_release() {
         fi
       fi
     else
-      [[ "$MODE" = "verbose" ]] && local _mix_release_verbose_flag=" --verbosity=normal" || local _mix_release_verbose_flag=" --verbosity=verbose"
+      [[ "$MODE" = "verbose" ]] && local _mix_release_verbose_flag=" --silent" || local _mix_release_verbose_flag=" --verbose"
     fi
     [[ "$MODE" = "verbose" ]] && local _auto_release_verbose=" --verbose"
     local _auto_version_args="$(__get_auto_version_args)"
